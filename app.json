@@ -24,5 +24,9 @@
       "iconPath": "icons/setting.png",
       "selectedIconPath": "icons/setting-fill.png"
     }]
+  },
+  "networkTimeout":{
+    "request":5000,
+    "connectSocket":5000
   }
 }
