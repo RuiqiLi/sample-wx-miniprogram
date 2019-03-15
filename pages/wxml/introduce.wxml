@@ -1,2 +1,10 @@
 <!--pages/wxml/introduce.wxml-->
-<text>pages/wxml/introduce.wxml</text>
+<view class="sample-selectable">
+  <text selectable="{{false}}">pages/wxml/introduce.wxml</text>
+</view>
+<view class="sample-space">
+  <text space="ensp">a              b</text>
+</view>
+<view class="sample-decode">
+  <text decode="{{true}}">&lt;/text&gt;</text>
+</view>
