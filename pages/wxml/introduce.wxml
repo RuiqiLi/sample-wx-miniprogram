@@ -8,3 +8,12 @@
 <view class="sample-decode">
   <text decode="{{true}}">&lt;/text&gt;</text>
 </view>
+<view class="sample-wxss1">
+  <text class="title">这是一个标题</text>
+</view>
+<view class="sample-wxss2">
+  <text class="title">这是第二个标题</text>
+</view>
+<view class="sample-wxss3">
+  <text class="article-title main-title">这是主标题</text>
+</view>
