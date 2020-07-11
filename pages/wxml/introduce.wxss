@@ -1,12 +1,42 @@
 /* pages/wxml/introduce.wxss */
+
+/* 为 title class 定义样式 */
 .title {
-  color: red;   /* 文字颜色为红色 */
+  color: red;       /* 文字颜色为红色 */
   font-size: 20pt;    /* 文字大小为20pt */
   font-weight: bold;  /* 文字加粗 */
 }
+
+/* 为 article-title class 定义样式 */
 .article-title {
-  font-size: 20pt;
+  font-size: 20pt;    /* 文字大小为20pt */
 }
+
+/* 为 main-title class 定义样式 */
 .main-title {
-  font-weight: bold;
+  font-weight: bold;  /* 文字加粗 */
+}
+
+/* 为 parent class 定义样式 */
+.parent {
+  box-sizing: border-box;       /* 设置盒模型的计算方式 */
+  width: 200rpx;                /* 给 parent 组件设置一个固定的宽度 */
+  height: 200rpx;               /* 给 parent 组件设置一个固定的高度 */
+  border: 20rpx solid black;  /* 设置边框宽度、样式和颜色 */
+  margin: 50rpx;                /* 设置外边距，外边距位于边框外面 */
+  margin-bottom: 0;             /* 单独设置下外边距为 0 */
+  padding: 50rpx;               /* 设置内边距，内边距位于边框内部 */
+  padding-right: 0;             /* 单独设置右内边距为 0 */
+}
+
+/* 为 child class 定义样式 */
+.child {
+  background: red;    /* 设置 child 组件的背景颜色，便于与 parent 区分 */
+  width: 100%;          /* 设置宽度，令其占满 parent 组件内部的全部区域 */
+  height: 100%;         /* 设置高度，令其占满 parent 组件内部的全部区域 */
+}
+
+/* 为 block class 定义样式 */
+.block {
+  display: block;   /* 设置为块级元素 */
 }

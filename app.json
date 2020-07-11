@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/wxml/introduce",
+    "pages/wxml/flex",
     "pages/index/index",
     "pages/logs/logs"
   ],

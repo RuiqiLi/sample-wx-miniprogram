@@ -1,0 +1,281 @@
+<!--pages/wxml/flex.wxml-->
+<!-- 本文件为弹性布局（即 flex 布局）的样例代码，样式的设置在 flex.wxss 文件中 -->
+<!-- flex-container 为容器组件，flex-item 为容器成员组件 -->
+<!-- 为了便于显示对齐效果，第 2 个容器成员组件的宽和高设置得稍微大一些 -->
+
+<view class="flex-title">从左到右排列</view>
+<view class="flex-container">
+  <view class="flex-item">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item">3</view>
+</view>
+
+<view class="flex-title">从上到下排列</view>
+<view class="flex-container flex-column">
+  <view class="flex-item">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item">3</view>
+</view>
+
+<view class="flex-title">从右到左排列</view>
+<view class="flex-container flex-row-reverse">
+  <view class="flex-item">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item">3</view>
+</view>
+
+<view class="flex-title">从下到上排列</view>
+<view class="flex-container flex-column-reverse">
+  <view class="flex-item">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item">3</view>
+</view>
+
+<view class="flex-title">不换行</view>
+<view class="flex-container">
+  <view class="flex-item big">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item big">3</view>
+  <view class="flex-item big">4</view>
+  <view class="flex-item big">5</view>
+  <view class="flex-item big">6</view>
+  <view class="flex-item big">7</view>
+  <view class="flex-item big">8</view>
+  <view class="flex-item big">9</view>
+  <view class="flex-item big">10</view>
+  <view class="flex-item big">11</view>
+  <view class="flex-item big">12</view>
+  <view class="flex-item big">13</view>
+  <view class="flex-item big">14</view>
+</view>
+
+<view class="flex-title">换行</view>
+<view class="flex-container flex-wrap">
+  <view class="flex-item big">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item big">3</view>
+  <view class="flex-item big">4</view>
+  <view class="flex-item big">5</view>
+  <view class="flex-item big">6</view>
+  <view class="flex-item big">7</view>
+  <view class="flex-item big">8</view>
+  <view class="flex-item big">9</view>
+  <view class="flex-item big">10</view>
+  <view class="flex-item big">11</view>
+  <view class="flex-item big">12</view>
+  <view class="flex-item big">13</view>
+  <view class="flex-item big">14</view>
+</view>
+
+<view class="flex-title">逆序换行</view>
+<view class="flex-container flex-wrap-reverse">
+  <view class="flex-item big">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item big">3</view>
+  <view class="flex-item big">4</view>
+  <view class="flex-item big">5</view>
+  <view class="flex-item big">6</view>
+  <view class="flex-item big">7</view>
+  <view class="flex-item big">8</view>
+  <view class="flex-item big">9</view>
+  <view class="flex-item big">10</view>
+  <view class="flex-item big">11</view>
+  <view class="flex-item big">12</view>
+  <view class="flex-item big">13</view>
+  <view class="flex-item big">14</view>
+</view>
+
+<view class="flex-title">横向排列居中</view>
+<view class="flex-container justify-center">
+  <view class="flex-item">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item">3</view>
+</view>
+
+<view class="flex-title">纵向排列居中</view>
+<view class="flex-container flex-column justify-center">
+  <view class="flex-item">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item">3</view>
+</view>
+
+<view class="flex-title">横向右侧对齐</view>
+<view class="flex-container justify-end">
+  <view class="flex-item">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item">3</view>
+</view>
+
+<view class="flex-title">纵向底部对齐</view>
+<view class="flex-container flex-column justify-end">
+  <view class="flex-item">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item">3</view>
+</view>
+
+<view class="flex-title">横向两端对齐</view>
+<view class="flex-container space-between">
+  <view class="flex-item">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item">3</view>
+</view>
+
+<view class="flex-title">纵向两端对齐</view>
+<view class="flex-container flex-column space-between">
+  <view class="flex-item">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item">3</view>
+</view>
+
+<view class="flex-title">横向均匀分布</view>
+<view class="flex-container space-around">
+  <view class="flex-item">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item">3</view>
+</view>
+
+<view class="flex-title">纵向均匀分布</view>
+<view class="flex-container flex-column space-around">
+  <view class="flex-item">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item">3</view>
+</view>
+
+<view class="flex-title">横向交叉轴居中</view>
+<view class="flex-container align-center">
+  <view class="flex-item">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item">3</view>
+</view>
+
+<view class="flex-title">纵向交叉轴居中</view>
+<view class="flex-container flex-column align-center">
+  <view class="flex-item">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item">3</view>
+</view>
+
+<view class="flex-title">横向交叉轴底部对齐</view>
+<view class="flex-container align-end">
+  <view class="flex-item">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item">3</view>
+</view>
+
+<view class="flex-title">纵向交叉轴右侧对齐</view>
+<view class="flex-container flex-column align-end">
+  <view class="flex-item">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item">3</view>
+</view>
+
+<view class="flex-title">换行顶部排列</view>
+<view class="flex-container flex-wrap align-content-start">
+  <view class="flex-item big">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item big">3</view>
+  <view class="flex-item big">4</view>
+  <view class="flex-item big">5</view>
+  <view class="flex-item big">6</view>
+  <view class="flex-item big">7</view>
+  <view class="flex-item big">8</view>
+  <view class="flex-item big">9</view>
+  <view class="flex-item big">10</view>
+  <view class="flex-item big">11</view>
+  <view class="flex-item big">12</view>
+  <view class="flex-item big">13</view>
+  <view class="flex-item big">14</view>
+</view>
+
+<view class="flex-title">换行底部排列</view>
+<view class="flex-container flex-wrap align-content-end">
+  <view class="flex-item big">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item big">3</view>
+  <view class="flex-item big">4</view>
+  <view class="flex-item big">5</view>
+  <view class="flex-item big">6</view>
+  <view class="flex-item big">7</view>
+  <view class="flex-item big">8</view>
+  <view class="flex-item big">9</view>
+  <view class="flex-item big">10</view>
+  <view class="flex-item big">11</view>
+  <view class="flex-item big">12</view>
+  <view class="flex-item big">13</view>
+  <view class="flex-item big">14</view>
+</view>
+
+<view class="flex-title">换行居中排列</view>
+<view class="flex-container flex-wrap align-content-center">
+  <view class="flex-item big">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item big">3</view>
+  <view class="flex-item big">4</view>
+  <view class="flex-item big">5</view>
+  <view class="flex-item big">6</view>
+  <view class="flex-item big">7</view>
+  <view class="flex-item big">8</view>
+  <view class="flex-item big">9</view>
+  <view class="flex-item big">10</view>
+  <view class="flex-item big">11</view>
+  <view class="flex-item big">12</view>
+  <view class="flex-item big">13</view>
+  <view class="flex-item big">14</view>
+</view>
+
+<view class="flex-title">换行两端对齐</view>
+<view class="flex-container flex-wrap align-content-space-between">
+  <view class="flex-item big">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item big">3</view>
+  <view class="flex-item big">4</view>
+  <view class="flex-item big">5</view>
+  <view class="flex-item big">6</view>
+  <view class="flex-item big">7</view>
+  <view class="flex-item big">8</view>
+  <view class="flex-item big">9</view>
+  <view class="flex-item big">10</view>
+  <view class="flex-item big">11</view>
+  <view class="flex-item big">12</view>
+  <view class="flex-item big">13</view>
+  <view class="flex-item big">14</view>
+</view>
+
+<view class="flex-title">换行均匀分布</view>
+<view class="flex-container flex-wrap align-content-space-around">
+  <view class="flex-item big">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item big">3</view>
+  <view class="flex-item big">4</view>
+  <view class="flex-item big">5</view>
+  <view class="flex-item big">6</view>
+  <view class="flex-item big">7</view>
+  <view class="flex-item big">8</view>
+  <view class="flex-item big">9</view>
+  <view class="flex-item big">10</view>
+  <view class="flex-item big">11</view>
+  <view class="flex-item big">12</view>
+  <view class="flex-item big">13</view>
+  <view class="flex-item big">14</view>
+</view>
+
+<view class="flex-title">用 order 排序容器成员</view>
+<view class="flex-container">
+  <view class="flex-item item-order-2">1</view>
+  <view class="flex-item big item-order-1">2</view>
+  <view class="flex-item item-order-3">3</view>
+</view>
+
+<view class="flex-title">单独设置容器成员对齐方式</view>
+<view class="flex-container">
+  <view class="flex-item item-align-center">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item">3</view>
+</view>
+
+<view class="flex-title">设置容器成员 1 和 3 按 1:2 的比例占满空间</view>
+<view class="flex-container">
+  <view class="flex-item flex-grow-1">1</view>
+  <view class="flex-item big">2</view>
+  <view class="flex-item flex-grow-2">3</view>
+</view>

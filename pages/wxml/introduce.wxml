@@ -1,13 +1,34 @@
 <!--pages/wxml/introduce.wxml-->
+
+<!-- 2.3.2. 组件介绍：text 组件 -->
+<!-- 说明：请先忽略外层的 view 组件，它在这里的作用是让每个 text 组件的内容独立成为一行 -->
+<!-- selectable 属性，能选择文字 -->
+<view class="sample-selectable">
+  <text selectable="{{true}}">pages/wxml/introduce.wxml</text>
+</view>
+<!-- selectable 属性，不能选择文字 -->
 <view class="sample-selectable">
   <text selectable="{{false}}">pages/wxml/introduce.wxml</text>
+</view>
+<!-- space 属性，不同取值的效果 -->
+<view class="sample-space">
+  <text>a              b</text>
 </view>
 <view class="sample-space">
   <text space="ensp">a              b</text>
 </view>
+<view class="sample-space">
+  <text space="emsp">a              b</text>
+</view>
+<view class="sample-space">
+  <text space="nbsp">a              b</text>
+</view>
+<!-- decode 属性 -->
 <view class="sample-decode">
   <text decode="{{true}}">&lt;/text&gt;</text>
 </view>
+
+<!-- 2.3.3 样式介绍：请同时阅读 introduce.wxss 文件中的代码 -->
 <view class="sample-wxss1">
   <text class="title">这是一个标题</text>
 </view>
@@ -17,11 +38,29 @@
 <view class="sample-wxss3">
   <text class="article-title main-title">这是主标题</text>
 </view>
+
+<!-- 2.3.4 view 组件与弹性布局 -->
+<!-- 这部分内容较多，请参考 pages/wxml/flex 页面 -->
+
+<!-- 2.3.5 盒模型 -->
+<!-- 这部分主要想展示 parent 的样式，child 的作用是显示出 parent 内部区域所在的位置，请主要学习 wxss 文件中 .parent 类的样式内容。 -->
+<view class="parent">
+  <view class="child"></view>
+</view>
+
+<!-- 2.3.6 块级元素与行内元素 -->
+<!-- view 组件默认为块级元素，每个 view 组件独占一行 -->
 <view class="sample-block">
   <view>view1</view>
   <view>view2</view>
 </view>
+<!-- text 组件默认为行内元素，多个 text 组件会并排一行显示 -->
 <view class="sample-inline">
   <text>text1</text>
   <text>text2</text>
+</view>
+<!-- 使用样式可以修改组件的默认排列方式，请参考 wxss 文件中对 .block 设置的样式 -->
+<view class="sample-text-block">
+  <text class="block">text1</text>
+  <text class="block">text2</text>
 </view>

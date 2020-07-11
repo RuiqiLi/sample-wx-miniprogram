@@ -1,0 +1,113 @@
+/* pages/wxml/flex.wxss */
+.flex-title {
+  margin-top: 50rpx;    /* 设置上边距 */
+  text-align: center;   /* 文字居中 */
+}
+
+.flex-container {
+  display: flex;              /* 设置布局方式为 flex 布局 */
+  width: 550rpx;              /* 设置容器宽度 */
+  margin-left: 100rpx;        /* 设置容器左边距，使容器左右居中显示 */
+  height: 300rpx;             /* 设置容器高度 */
+  border: 1rpx solid black; /* 设置边框，显示出容器的轮廓 */
+}
+
+.flex-item {
+  width: 50rpx;               /* 设置容器成员宽度 */
+  height: 50rpx;              /* 设置容器成员高度 */
+  border: 1rpx solid black; /* 设置边框，显示出容器成员的轮廓 */
+  text-align: center;         /* 设置容器成员中的文字居中显示 */
+}
+
+.big {
+  width: 75rpx;   /* 设置宽度 */
+  height: 75rpx;  /* 设置高度 */
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-content-start {
+  align-content: flex-start;
+}
+
+.align-content-end {
+  align-content: flex-end;
+}
+
+.align-content-center {
+  align-content: center;
+}
+
+.align-content-space-between {
+  align-content: space-between;
+}
+
+.align-content-space-around {
+  align-content: space-around;
+}
+
+.item-order-1 {
+  order: 1;
+}
+
+.item-order-2 {
+  order: 2;
+}
+
+.item-order-3 {
+  order: 3;
+}
+
+.item-align-center {
+  align-self: center;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-grow-2 {
+  flex-grow: 2;
+}
